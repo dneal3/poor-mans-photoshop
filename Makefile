@@ -1,4 +1,4 @@
-SRC=stress_test.C image.C sink.C source.C PNMreader.C PNMwriter.C filter.C logging.C
+SRC=image.C sink.C source.C PNMreader.C PNMwriter.C filter.C logging.C
 OBJ=$(SRC:.C=.o)
 
 prog: $(OBJ)
@@ -8,4 +8,4 @@ prog: $(OBJ)
 	g++  -g -I. -c $<
 
 clean:
-	rm *.o stress_test
+	rm *.o 
